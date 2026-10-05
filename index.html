@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>hdinsta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<button id="theme" aria-label="Tema değiştir">◐</button>
+<main>
+  <h1>hdinsta</h1>
+  <p class="sub">Kullanıcı adı ya da gönderi/reel bağlantısı yapıştır.</p>
+  <form id="form"><input id="q" placeholder="@kullanici veya instagram.com/p/…" autocomplete="off" autofocus><button>İndir</button></form>
+  <div id="proxybox" hidden>
+    <p>Hiçbir kaynak yanıt vermedi. Kendi CORS proxy'ni gir (<code>{url}</code> yer tutucudur):</p>
+    <form id="pform"><input id="pin" placeholder="https://proxyin.example/?u={url}"><button>Kaydet ve dene</button></form>
+  </div>
+  <div id="status" aria-live="polite"></div>
+  <div id="bar" hidden><span id="count"></span><button id="all">Tümünü indir</button></div>
+  <section id="grid"></section>
+</main>
+<div id="toast"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
